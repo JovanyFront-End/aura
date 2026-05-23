@@ -1,1 +1,14 @@
 @import "tailwindcss";
+
+@variant dark (&:where(.dark, .dark *));
+
+@source "../node_modules/flowbite/**/*.js";
+
+@theme {
+    --color-brand-700: #1c1917;
+    --color-brand-900: #0c0a09;
+
+    --spacing-85.5: 21.375rem;  
+    --spacing-87.5: 21.875rem;  
+    --spacing-112.5: 28.125rem; 
+}
