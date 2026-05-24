@@ -80,8 +80,8 @@ if (form) {
 }
 
 const products = [
-    { id: 1, name: "Minimalist Watch", desc: "A timeless piece for everyday wear.", rating: 4.9, reviews: 128, img: "https://images.unsplash.com/photo-1434056886845-dac89ffe9b56?w=500&auto=format&fit=crop&q=60" },
-    { id: 2, name: "Premium Wallet", desc: "Handcrafted slim genuine leather companion.", rating: 4.7, reviews: 84, img: "https://images.unsplash.com/photo-1627123424574-724758594e93?w=500&auto=format&fit=crop&q=60" },
+    { id: 1, name: "White V-Neck Sweater", desc: "A timeless piece for everyday wear.", rating: 4.9, reviews: 128, img: "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGNsb3RoZXN8ZW58MHx8MHx8fDA%3D" },
+    { id: 2, name: "White chair", desc: "Handcrafted slim genuine leather companion.", rating: 4.7, reviews: 84, img: "https://plus.unsplash.com/premium_photo-1678074057896-eee996d4a23e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGNoYWlyfGVufDB8fDB8fHww" },
     { id: 3, name: "Ceramic Mug", desc: "Perfect matte finish for your morning espresso ritual.", rating: 4.8, reviews: 215, img: "https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?w=500&auto=format&fit=crop&q=60" },
     { id: 4, name: "Desk Lamp", desc: "Architectural targeted lighting for your workspace.", rating: 4.9, reviews: 342, img: "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?w=500&auto=format&fit=crop&q=60" }
 ];
@@ -93,7 +93,6 @@ const testimonials = [
     { name: "Julian Vane", role: "Creative Director", text: "AURA isn't just a store; it's a lifestyle. Their curated selection saved me hours of searching for the perfect home essentials.", avatar: "https://i.pravatar.cc/150?u=julian" }
 ];
 
-// Safeguard against local storage crashes
 let cart = [];
 try {
     cart = JSON.parse(localStorage.getItem('aura_cart')) || [];
